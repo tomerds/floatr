@@ -224,6 +224,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.top-content .title .break {
+  display: none;
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -298,6 +301,11 @@ body {
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
+@media screen and (max-width: 600px) {
+  .top-content h2 {
+    font-size: 50px;
+  }
+}
 .middle-content {
   height: auto;
   width: 100%;
@@ -360,7 +368,7 @@ body {
 }
 .bottom-content .bottom-content-box .info-bottom {
   display: flex;
-  width: 50%;
+  width: 65%;
   min-width: 400px;
   height: 200px;
   flex-direction: column;
@@ -407,4 +415,43 @@ footer form .form-group {
 footer form .form-group .form-text {
   font-size: 10px;
   margin-top: 5px;
+}
+.divider {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 10px;
+  border-bottom: solid grey 0.5px;
+}
+@media only screen and (max-width: 600px) {
+  .middle-content {
+    width: 100%;
+  }
+  .middle-content .floatr,
+  .middle-content .plastic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .middle-content .floatr .content,
+  .middle-content .plastic .content {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .middle-content .floatr .img,
+  .middle-content .plastic .img {
+    width: 90%;
+  }
+  .bottom-content {
+    width: 100%;
+  }
+  .bottom-content .bottom-content-box {
+    width: 100%;
+  }
+  .bottom-content .bottom-content-box .tag-title {
+    margin-bottom: 40px;
+  }
+  .bottom-content img {
+    width: 100%;
+  }
 }
