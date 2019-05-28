@@ -6,22 +6,25 @@
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+	<script defer="defer" src="./js/navbar.js"></script>
+
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
 <body>
-	<header class='navbar'>
+	<header class='navbar '>
 		<h1>Floatr</h1>
 
-		<nav>
+		<nav class='menu'>
 			<div class="menu-img"><img src="../Floatr/img/nav-hamburger.png" alt="menu"></div>
-			<div class='menu-text hidden'>
+			<div class='menu-open hidden'>
 				<ul>
 					<li>Home</li>
 					<li>Products</li>
 					<li>Join</li>
+					<img src="./img/nav-hamburger-close.png" alt="close" class='close-img'>
 				</ul>
 			</div>
 
@@ -35,7 +38,10 @@
 
 	<div class='top-content'>
 		<!-- <img src="../Floatr/img/home/plastic-jumbotron-2.jpg" alt="plastic pollution"> -->
-		<h1>Save the planet.</h1>
+		<div class='title'>
+			<h1>Floatr</h1>
+			<h2>Save the planet.</h2>
+		</div>
 	</div>
 
 
@@ -44,6 +50,10 @@
 			<img class='img' src="../Floatr/img/home/milk.jpg" alt="milk bottles">
 			<div class='content'>
 				<h3>Floatr</h3>
+				<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse
+					consectetuer
+					sed. Duo etiam laboramus dissentiet in, nec no errem
+				</p>
 				<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse
 					consectetuer
 					sed. Duo etiam laboramus dissentiet in, nec no errem
@@ -60,6 +70,10 @@
 					consectetuer
 					sed. Duo etiam laboramus dissentiet in, nec no errem
 				</p>
+				<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse
+					consectetuer
+					sed. Duo etiam laboramus dissentiet in, nec no errem
+				</p>
 				<div class='button'>Learn More</div>
 			</div>
 		</div>
@@ -70,9 +84,9 @@
 
 		<h3>How We Work</h3>
 
-		<div class='bottom-content'>
-			<div class='img'></div>
-			<div class="tag-title right">The Milkman Model</div>
+		<div class='bottom-content-box 1'>
+			<img src="../Floatr/img/home/milkman2.png" alt="milk van">
+			<div class="tag-title">The Milkman Model</div>
 
 			<div class='info-bottom'>
 				<p>
@@ -92,9 +106,9 @@
 			</div>
 		</div>
 
-		<div class='bottom-content'>
-			<div class='img'></div>
-			<div class="tag-title left">Products</div>
+		<div class='bottom-content-box 2'>
+			<img src="../Floatr/img/home/products.png" alt="products">
+			<div class="tag-title">Products</div>
 
 			<div class='info-bottom'>
 				<p>
@@ -114,9 +128,9 @@
 			</div>
 		</div>
 
-		<div class='bottom-content'>
-			<div class='img'></div>
-			<div class="tag-title right">Optimised For You</div>
+		<div class='bottom-content-box 3'>
+			<img src="../Floatr/img/home/doggy.png" alt="dog in box">
+			<div class="tag-title">Optimised For You</div>
 
 			<div class='info-bottom'>
 				<p>
@@ -143,32 +157,24 @@
 
 	<!-- FOOTER CONTENT -->
 	<footer>
-		<form>
+		<div class='form'>
+			<form>
+				<p>Interested in joining our beta?</p>
+				<p>Let’s talk:</p>
+				<div class="form-group">
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+						placeholder="Enter email">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+			</form>
+		</div>
 
-			<p>Interested in joining our beta?</p>
-			<p>Let’s talk:</p>
-			<div class="form-group">
-				<label for="exampleInputEmail1">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-					placeholder="Enter email">
-				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			</div>
-
-
-			<div class=address>
-				<h4>London</h4>
-				<p>123 Road</p>
-				<p>Office 1</p>
-				<p>London, UK</p>
-				<p>+4488121212</p>
-			</div>
-
-			<div class='copyright'>
-				Copyright © 2019 Floatr
-			</div>
+		<div class='copyright'>
+			Copyright © 2019 Floatr
+		</div>
 	</footer>
 
-	<script src="js/index.js"></script>
+
 </body>
 
 </html>
