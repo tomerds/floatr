@@ -1,1 +1,220 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+.seperator {
+  height: 70px;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 187, 253, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: Bold;
+  font-size: 24px;
+}
+.navbar h1 {
+  margin-left: 30px;
+}
+.navbar nav {
+  padding-right: 30px;
+}
+.navbar .hidden {
+  display: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-family: 'Roboto';
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+body {
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0;
+}
+.top-content {
+  height: 700px;
+  width: 100%;
+  background-image: url('/Users/tomerdusautoy/Documents/LambdaNotes/floatr/Floatr/img/home/jumbotron.jpg');
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+}
+.top-content h1 {
+  font-weight: bold;
+  font-size: 72px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+.middle-content {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.middle-content .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  width: 80%;
+  margin-bottom: 40px;
+}
+.middle-content .info img {
+  height: auto;
+  min-width: 200px;
+  width: 48%;
+}
+.middle-content .info .content {
+  width: 48%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.middle-content .info h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.middle-content .plastic {
+  flex-direction: row-reverse;
+}

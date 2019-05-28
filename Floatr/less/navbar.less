@@ -1,0 +1,31 @@
+@navbar-height: 70px;
+
+.seperator {
+  height: @navbar-height;
+  width:100%;
+}
+
+.navbar {
+  position: fixed;
+  height: @navbar-height;
+  width: 100%;
+  background-color: @floatr-blue-nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: @header-color;
+  font-weight: Bold;
+  font-size: 24px;
+  
+  h1 {
+    margin-left: @margin;
+  }
+
+  nav {
+    padding-right: @margin;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

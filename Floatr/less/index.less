@@ -6,6 +6,10 @@ v2.0b1 | 201101
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 
+
+@import '../less/navbar.less';
+@import '../less/mixins.less';
+
 html,body,div,span,applet,object,iframe,
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,acronym,address,big,cite,code,
@@ -23,7 +27,7 @@ time,mark,audio,video{
   border:0;
   outline:0;
   font-size:100%;
-  font:inherit;
+  font-family: 'Roboto';
   vertical-align:baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -58,3 +62,80 @@ table{
 }
 
 /* Your Code Goes Here */
+
+body {
+	box-sizing: border-box;
+	min-width: 300px;
+	margin: 0;
+}
+
+.top-content {
+  height: 700px;
+  width: 100%;
+  background-image: url('/Users/tomerdusautoy/Documents/LambdaNotes/floatr/Floatr/img/home/jumbotron.jpg');
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;
+
+  .shadow();
+
+  h1 {
+    font-weight: bold;
+    font-size: 72px;
+    margin-left: @margin;
+    margin-bottom: @margin;
+    color: @header-color;
+   
+  }
+}
+
+.middle-content {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  // border: solid black 1px;
+
+  .info {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    width: 80%;
+    margin-bottom: 40px;
+    // border: solid red 1px;
+
+    img {
+      height: auto;
+      min-width: 200px;
+      width: 48%;
+      
+    }
+
+    .content {
+      width: 48%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: space-between;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    
+  }
+
+  .plastic {
+    flex-direction: row-reverse;
+  }
+  
+}
