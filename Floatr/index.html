@@ -6,11 +6,15 @@
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script defer="defer" src="./js/navbar.js"></script>
+	<script defer="defer" src="./js/join.js"></script>
 
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+
 </head>
 
 <body>
@@ -21,9 +25,15 @@
 			<div class="menu-img"><img src="../Floatr/img/nav-hamburger.png" alt="menu"></div>
 			<div class='menu-open hidden'>
 				<ul>
-					<li>Home</li>
-					<li>Products</li>
-					<li>Join</li>
+					<a href="../Floatr/index.html">
+						<li>Home</li>
+					</a>
+					<a href="../Floatr/product.html">
+						<li>Products</li>
+					</a>
+					<a class='join'>
+						<li>Join</li>
+					</a>
 					<img src="./img/nav-hamburger-close.png" alt="close" class='close-img'>
 				</ul>
 			</div>
@@ -87,7 +97,7 @@
 		<h3>How We Work</h3>
 
 		<div class='bottom-content-box 1'>
-			<img src="../Floatr/img/home/milkman2.png" alt="milk van">
+			<img data-aos="fade-up" data-aos-once="true" src="../Floatr/img/home/milkman2.png" alt="milk van">
 			<div class="tag-title">The Milkman Model</div>
 
 			<div class='info-bottom'>
@@ -109,7 +119,7 @@
 		</div>
 
 		<div class='bottom-content-box 2'>
-			<img src="../Floatr/img/home/products.png" alt="products">
+			<img data-aos="fade-up" data-aos-once="true" src="../Floatr/img/home/products.png" alt="products">
 			<div class="tag-title">Products</div>
 
 			<div class='info-bottom'>
@@ -131,7 +141,7 @@
 		</div>
 
 		<div class='bottom-content-box 3'>
-			<img src="../Floatr/img/home/doggy.png" alt="dog in box">
+			<img data-aos="fade-up" data-aos-once="true" src="../Floatr/img/home/doggy.png" alt="dog in box">
 			<div class="tag-title">Optimised For You</div>
 
 			<div class='info-bottom'>
@@ -176,6 +186,11 @@
 		</div>
 	</footer>
 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
 </body>
 

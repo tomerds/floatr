@@ -70,6 +70,15 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   font-size: 20px;
   padding: 10px 10px;
 }
+.menu-open ul a {
+  text-decoration: none;
+}
+.menu-open ul a:visited {
+  color: white;
+}
+.menu-open ul a:link {
+  color: white;
+}
 .menu-open ul li:hover {
   background-color: #00bbfd;
   border-radius: 3px;
@@ -130,7 +139,6 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   display: flex;
   justify-content: space-around;
   width: 50%;
-  min-width: 900px;
 }
 .services-content .tabs .tabs-links .tabs-link {
   border-radius: 5px;
@@ -181,7 +189,35 @@ USE WITH CAUTION AND TEST WITH ABANDON */
   justify-content: center;
   align-items: flex-start;
   margin: 50px 0;
-  min-width: 900px;
+}
+@media screen and (max-width: 900px) {
+  .tabs-links {
+    min-width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tabs-links .tabs-link {
+    min-width: 80%;
+  }
+  .selected {
+    min-width: none;
+    width: 100%;
+  }
+  .tabs-item-content {
+    margin: 20px 0;
+    flex-direction: column;
+    min-width: 100%;
+    height: 600px;
+    justify-content: center;
+  }
+  .tabs-item-text,
+  img {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 html,
 body,

@@ -1,3 +1,5 @@
+// ****************** Open Menu ******************
+
 class Open {
   constructor(element) {
     this.element = element;
@@ -20,6 +22,7 @@ class Open {
   }
 
 }
+
 
 
 let menu = document.querySelector('.menu');

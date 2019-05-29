@@ -1,4 +1,6 @@
 
+//less-watch-compiler less css index.less 
+
 .services-banner {
   height:300px;
   width:100%;
@@ -42,7 +44,7 @@
       display: flex;
       justify-content: space-around;
       width: 50%;
-      min-width: 900px;
+      // min-width: 900px;
 
       .tabs-link {
         // border: solid @floatr-blue 1px;
@@ -105,8 +107,50 @@
       justify-content: center;
       align-items: flex-start;
       margin: 50px 0;
-      min-width:900px;
+      // min-width:900px;
     }
   }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .tabs-links {
+    
+    min-width: 100%;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .tabs-link {
+      min-width: 80%;
+    }
+    
+  }
+
+
+  .selected {
+    min-width: none;
+    width: 100%;
+  }
+
+  .tabs-item-content {
+    margin: 20px 0;
+    flex-direction: column;
+    min-width: 100%;
+    height: 600px;
+    justify-content: center;
+   
+  }
+
+  .tabs-item-text, img {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
+
+
 
 }
