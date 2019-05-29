@@ -56,9 +56,22 @@
     align-items: center;
     
     li {
+      animation: fadein 0.4s;
       -webkit-animation: fadein 0.4s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 0.4s; /* Firefox < 16 */
+      -ms-animation: fadein 0.4s; /* Internet Explorer */
+       -o-animation: fadein 0.4s; /* Opera < 12.1 */
       margin:20px;
       font-size: 20px;
+      padding: 10px 10px;
+    }
+
+    li:hover {
+      background-color: @floatr-blue;
+      border-radius: 3px;
+      .shadow-light();
+      transition: 0.4s;
+      
     }
     img {
       width:30px;

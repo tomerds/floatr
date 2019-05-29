@@ -1,0 +1,112 @@
+
+.services-banner {
+  height:300px;
+  width:100%;
+  background-image: url('../img/home/products.png');
+  background-position: calc(50% - 50px) 50%;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-weight: bold;
+    font-size: 70px;
+    color: @header-color;
+    padding-top: 200px;
+    padding-left: 50px;
+  }
+
+}
+
+.services-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .services-paragraph {
+    width: 80%;
+    margin: 40px 0;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tabs-links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      min-width: 900px;
+
+      .tabs-link {
+        // border: solid @floatr-blue 1px;
+        border-radius: 5px;
+        .button-shadow();
+        height: 50px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .tabs-link:hover {
+        background-color: @floatr-blue-nav;
+        color: #FFFFFF;
+        transition: 0.25s;
+        
+      }
+
+      .tabs-link-selected {
+        background-color: @floatr-blue;
+        color: #FFFFFF;
+      }
+
+    }
+
+    .tabs-items {
+      width:80%;
+      
+    }
+
+    .tabs-item {
+
+      display:none;
+
+      .tabs-item-title {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .tabs-item-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .tabs-item-text, img {
+          width: 48%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+      }
+    }
+    .selected{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 50px 0;
+      min-width:900px;
+    }
+  }
+
+}
